@@ -25,7 +25,7 @@ class DatePickerViewController: UIViewController {
             popoverPresentation?.sourceRect = sourceView.bounds
             conroller.present(self, animated: true, completion: nil)
         } else {
-            let presentationDelegate = DatePickerPresentetionDelegate()
+            let presentationDelegate = DatePickerPresentationDelegate()
             presentationDelegate.datePicker = self.datePicker
             self.transitioningDelegate = presentationDelegate
             self.modalPresentationStyle = .custom

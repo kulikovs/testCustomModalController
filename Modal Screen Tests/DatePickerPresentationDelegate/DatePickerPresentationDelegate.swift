@@ -8,10 +8,7 @@
 
 import UIKit
 
-
-
-
-class DatePickerPresentetionDelegate: NSObject, UIViewControllerTransitioningDelegate, UIAdaptivePresentationControllerDelegate {
+class DatePickerPresentationDelegate: NSObject, UIViewControllerTransitioningDelegate, UIAdaptivePresentationControllerDelegate {
     
     //Need to add init logical
     var datePicker: UIDatePicker? = nil
