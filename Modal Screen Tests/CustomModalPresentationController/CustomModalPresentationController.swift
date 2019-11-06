@@ -1,5 +1,5 @@
 //
-//  DatePickerPresentationController.swift
+//  CustomModalPresentationController.swift
 //  Modal Screen Tests
 //
 //  Created by Sergey Kulikov on 11/5/19.
@@ -9,14 +9,14 @@
 import UIKit
 import SnapKit
 
-class DatePickerPresentationController: UIPresentationController {
-    private let datePicker: UIDatePicker
+class CustomModalPresentationController: UIPresentationController {
+    private let presentationView: UIView
     private var dimmingView = UIView()
     
     //MARK: - Initialization and deallocations
     
-    init(presentedViewController: UIViewController, presentingViewController: UIViewController?, datePicker: UIDatePicker) {
-        self.datePicker = datePicker
+    init(presentedViewController: UIViewController, presentingViewController: UIViewController?, presentationView: UIView) {
+        self.presentationView = presentationView
         
         super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
         self.setupDimmingView()
@@ -25,17 +25,17 @@ class DatePickerPresentationController: UIPresentationController {
     //MARK: - Overriden methods
     
     override var frameOfPresentedViewInContainerView: CGRect {
-        let container = self.containerView
-        let parrentSize = container?.frame.size
         var rect: CGRect = .zero
-        let deviceIdiom = UIDevice.current.userInterfaceIdiom
-        if let parrentSize = parrentSize {
+        self.containerView.map {
+            let parrentSize = $0.frame.size
+            let deviceIdiom = UIDevice.current.userInterfaceIdiom
+            
             switch deviceIdiom {
             case .phone:
-                rect.size = CGSize(width: parrentSize.width, height: self.datePicker.frame.height)
-                rect.origin.y = parrentSize.height - datePicker.frame.height
+                rect.size = CGSize(width: parrentSize.width, height: self.presentationView.frame.height)
+                rect.origin.y = parrentSize.height - presentationView.frame.height
             default:
-                rect.size = datePicker.frame.size
+                rect.size = presentationView.frame.size
             }
         }
         
