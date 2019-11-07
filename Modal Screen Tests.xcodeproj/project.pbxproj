@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		595B95672371657800FB1978 /* CustomModalPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B95662371657800FB1978 /* CustomModalPresentationDelegate.swift */; };
-		595B95692371695100FB1978 /* CustomModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B95682371695100FB1978 /* CustomModalPresentationController.swift */; };
+		595B95672371657800FB1978 /* FormSheetPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B95662371657800FB1978 /* FormSheetPresentationDelegate.swift */; };
+		595B95692371695100FB1978 /* FormSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B95682371695100FB1978 /* FormSheetPresentationController.swift */; };
 		5965170C236C4DF5005B37EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5965170B236C4DF5005B37EC /* AppDelegate.swift */; };
 		5965170E236C4DF5005B37EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5965170D236C4DF5005B37EC /* SceneDelegate.swift */; };
 		59651710236C4DF5005B37EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5965170F236C4DF5005B37EC /* ViewController.swift */; };
@@ -17,14 +17,14 @@
 		59651718236C4DF8005B37EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59651716236C4DF8005B37EC /* LaunchScreen.storyboard */; };
 		59651722236C4E34005B37EC /* TestModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59651720236C4E34005B37EC /* TestModalViewController.swift */; };
 		59651723236C4E34005B37EC /* TestModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59651721236C4E34005B37EC /* TestModalViewController.xib */; };
-		59651727236C6A9D005B37EC /* CustomModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59651725236C6A9D005B37EC /* CustomModalController.swift */; };
+		59651727236C6A9D005B37EC /* FormSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59651725236C6A9D005B37EC /* FormSheetViewController.swift */; };
 		BC757EBAD985689C9F748995 /* Pods_Modal_Screen_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59060E04DFFA49EE6057FCF /* Pods_Modal_Screen_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		458C32FE025BA6D15DCD9DBB /* Pods-Modal Screen Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modal Screen Tests.release.xcconfig"; path = "Target Support Files/Pods-Modal Screen Tests/Pods-Modal Screen Tests.release.xcconfig"; sourceTree = "<group>"; };
-		595B95662371657800FB1978 /* CustomModalPresentationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModalPresentationDelegate.swift; sourceTree = "<group>"; };
-		595B95682371695100FB1978 /* CustomModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModalPresentationController.swift; sourceTree = "<group>"; };
+		595B95662371657800FB1978 /* FormSheetPresentationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSheetPresentationDelegate.swift; sourceTree = "<group>"; };
+		595B95682371695100FB1978 /* FormSheetPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSheetPresentationController.swift; sourceTree = "<group>"; };
 		59651708236C4DF5005B37EC /* Modal Screen Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Modal Screen Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5965170B236C4DF5005B37EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5965170D236C4DF5005B37EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		59651719236C4DF8005B37EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59651720236C4E34005B37EC /* TestModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModalViewController.swift; sourceTree = "<group>"; };
 		59651721236C4E34005B37EC /* TestModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestModalViewController.xib; sourceTree = "<group>"; };
-		59651725236C6A9D005B37EC /* CustomModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModalController.swift; sourceTree = "<group>"; };
+		59651725236C6A9D005B37EC /* FormSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSheetViewController.swift; sourceTree = "<group>"; };
 		B02A34910C13066CB9F8F0EB /* Pods-Modal Screen Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modal Screen Tests.debug.xcconfig"; path = "Target Support Files/Pods-Modal Screen Tests/Pods-Modal Screen Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F59060E04DFFA49EE6057FCF /* Pods_Modal_Screen_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Modal_Screen_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -60,20 +60,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		595B95642371643200FB1978 /* CustomModalPresentationController */ = {
+		595B95642371643200FB1978 /* FormSheetPresentationController */ = {
 			isa = PBXGroup;
 			children = (
-				595B95682371695100FB1978 /* CustomModalPresentationController.swift */,
+				595B95682371695100FB1978 /* FormSheetPresentationController.swift */,
 			);
-			path = CustomModalPresentationController;
+			path = FormSheetPresentationController;
 			sourceTree = "<group>";
 		};
-		595B95652371653B00FB1978 /* CustomModalPresentationDelegate */ = {
+		595B95652371653B00FB1978 /* FormSheetPresentationDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				595B95662371657800FB1978 /* CustomModalPresentationDelegate.swift */,
+				595B95662371657800FB1978 /* FormSheetPresentationDelegate.swift */,
 			);
-			path = CustomModalPresentationDelegate;
+			path = FormSheetPresentationDelegate;
 			sourceTree = "<group>";
 		};
 		596516FF236C4DF5005B37EC = {
@@ -97,9 +97,9 @@
 		5965170A236C4DF5005B37EC /* Modal Screen Tests */ = {
 			isa = PBXGroup;
 			children = (
-				595B95652371653B00FB1978 /* CustomModalPresentationDelegate */,
-				595B95642371643200FB1978 /* CustomModalPresentationController */,
-				59651724236C6634005B37EC /* CustomModalController */,
+				595B95652371653B00FB1978 /* FormSheetPresentationDelegate */,
+				595B95642371643200FB1978 /* FormSheetPresentationController */,
+				59651724236C6634005B37EC /* FormSheetViewController */,
 				5965171F236C4E0B005B37EC /* ModalViewController */,
 				5965170B236C4DF5005B37EC /* AppDelegate.swift */,
 				5965170D236C4DF5005B37EC /* SceneDelegate.swift */,
@@ -121,12 +121,12 @@
 			path = ModalViewController;
 			sourceTree = "<group>";
 		};
-		59651724236C6634005B37EC /* CustomModalController */ = {
+		59651724236C6634005B37EC /* FormSheetViewController */ = {
 			isa = PBXGroup;
 			children = (
-				59651725236C6A9D005B37EC /* CustomModalController.swift */,
+				59651725236C6A9D005B37EC /* FormSheetViewController.swift */,
 			);
-			path = CustomModalController;
+			path = FormSheetViewController;
 			sourceTree = "<group>";
 		};
 		BC9548DAB186720DA1397719 /* Pods */ = {
@@ -254,11 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				595B95692371695100FB1978 /* CustomModalPresentationController.swift in Sources */,
+				595B95692371695100FB1978 /* FormSheetPresentationController.swift in Sources */,
 				59651710236C4DF5005B37EC /* ViewController.swift in Sources */,
-				59651727236C6A9D005B37EC /* CustomModalController.swift in Sources */,
+				59651727236C6A9D005B37EC /* FormSheetViewController.swift in Sources */,
 				5965170C236C4DF5005B37EC /* AppDelegate.swift in Sources */,
-				595B95672371657800FB1978 /* CustomModalPresentationDelegate.swift in Sources */,
+				595B95672371657800FB1978 /* FormSheetPresentationDelegate.swift in Sources */,
 				5965170E236C4DF5005B37EC /* SceneDelegate.swift in Sources */,
 				59651722236C4E34005B37EC /* TestModalViewController.swift in Sources */,
 			);
@@ -405,8 +405,9 @@
 			baseConfigurationReference = B02A34910C13066CB9F8F0EB /* Pods-Modal Screen Tests.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K33J7AD8C7;
+				DEVELOPMENT_TEAM = 5KVP6K7EQF;
 				INFOPLIST_FILE = "Modal Screen Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -414,6 +415,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fde.Modal-Screen-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -424,8 +426,9 @@
 			baseConfigurationReference = 458C32FE025BA6D15DCD9DBB /* Pods-Modal Screen Tests.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K33J7AD8C7;
+				DEVELOPMENT_TEAM = 48U8R62H6D;
 				INFOPLIST_FILE = "Modal Screen Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -433,6 +436,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fde.Modal-Screen-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

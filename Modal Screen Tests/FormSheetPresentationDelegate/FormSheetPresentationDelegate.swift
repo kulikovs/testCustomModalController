@@ -1,5 +1,5 @@
 //
-//  CustomModalPresentationDelegate.swift
+//  FormSheetPresentationDelegate.swift
 //  Modal Screen Tests
 //
 //  Created by Sergey Kulikov on 11/5/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomModalPresentationDelegate: NSObject, UIViewControllerTransitioningDelegate, UIAdaptivePresentationControllerDelegate {
+class FormSheetPresentationDelegate: NSObject, UIViewControllerTransitioningDelegate, UIAdaptivePresentationControllerDelegate {
     
     let presentationView: UIView
     
@@ -26,7 +26,7 @@ class CustomModalPresentationDelegate: NSObject, UIViewControllerTransitioningDe
                                 presenting: UIViewController?,
                                 source: UIViewController) -> UIPresentationController?
     {
-        let controller = CustomModalPresentationController(presentedViewController: presented,
+        let controller = FormSheetPresentationController(presentedViewController: presented,
                                                            presentingViewController: presenting,
                                                            presentationView: presentationView)
         controller.delegate = self

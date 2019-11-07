@@ -1,5 +1,5 @@
 //
-//  CustomModalPresentationController.swift
+//  FormSheetPresentationController.swift
 //  Modal Screen Tests
 //
 //  Created by Sergey Kulikov on 11/5/19.
@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class CustomModalPresentationController: UIPresentationController {
+class FormSheetPresentationController: UIPresentationController {
     private let presentationView: UIView
     private var dimmingView = UIView()
     
@@ -28,15 +28,9 @@ class CustomModalPresentationController: UIPresentationController {
         var rect: CGRect = .zero
         self.containerView.map {
             let parrentSize = $0.frame.size
-            let deviceIdiom = UIDevice.current.userInterfaceIdiom
-            
-            switch deviceIdiom {
-            case .phone:
-                rect.size = CGSize(width: parrentSize.width, height: self.presentationView.frame.height)
-                rect.origin.y = parrentSize.height - presentationView.frame.height
-            default:
-                rect.size = presentationView.frame.size
-            }
+            let presentationView = self.presentationView
+            rect.size = CGSize(width: parrentSize.width, height: presentationView.frame.height)
+            rect.origin.y = parrentSize.height - presentationView.frame.height
         }
         
         return rect
@@ -50,7 +44,7 @@ class CustomModalPresentationController: UIPresentationController {
         
         let coordinator = self.presentedViewController.transitionCoordinator
         coordinator?.animate(alongsideTransition:{ _ in
-            self.dimmingView.alpha = 1.0
+            self.dimmingView.alpha = 1
         })
     }
     
@@ -66,8 +60,8 @@ class CustomModalPresentationController: UIPresentationController {
     private func setupDimmingView() {
         let dimmingView = self.dimmingView
         dimmingView.translatesAutoresizingMaskIntoConstraints = false
-        dimmingView.backgroundColor = UIColor(white: 0.0, alpha: 0.5)
-        dimmingView.alpha = 0.0
+        dimmingView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        dimmingView.alpha = 0
         
         let recognizer = UITapGestureRecognizer(target: self,
                                                 action: #selector(tapHide))
