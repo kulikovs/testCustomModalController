@@ -27,8 +27,8 @@ class FormSheetPresentationDelegate: NSObject, UIViewControllerTransitioningDele
                                 source: UIViewController) -> UIPresentationController?
     {
         let controller = FormSheetPresentationController(presentedViewController: presented,
-                                                           presentingViewController: presenting,
-                                                           presentationView: presentationView)
+                                                         presentingViewController: presenting,
+                                                         presentationView: presentationView)
         controller.delegate = self
         
         return controller

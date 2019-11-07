@@ -9,11 +9,11 @@
 import UIKit
 
 class FormSheetViewController<View: UIView>: UIViewController {
-
-  private var containerView: View
-
+    
+    private var containerView: View
+    
     //MARK: - Initializations and deallocations
-
+    
     init(containerView: View ) {
         self.containerView = containerView
         
